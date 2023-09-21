@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce project</title>
+    <!-- css links  -->
+    <link rel="stylesheet" href="./Ecommarce.css" />
+    <!-- font cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="containe">
+      <nav>
+        <div class="logo">
+          <h1>Trends</h1>
+        </div>
+
+        <ul>
+          <li>
+            <a href="#" id="home" onclick="homes()">Home</a>
+            <a id="shop" onclick="shop()">Shops</a>
+            <a id="blog" onclick="blog()">Blog</a>
+            <a id="about" onclick="about()">About</a>
+            <a id="contact" onclick="contact()">Contact</a>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- main-pag  -->
+      <div class="main">
+        <div class="maintext">
+          <h2>Trends...</h2>
+          <h1 class="top">Super value Deals</h1>
+          <h1>On All Products</h1>
+          <p>Lorem ipsum dolor sit amet consectet Adipisci, placeat.</p>
+          <button>Explore</button>
+        </div>
+
+        <img
+          src="./images/michael-dam-mEZ3PoFGs_k-unsplash-removebg-preview.png "
+          alt="img-1"
+          height="500px "
+          width="500px"
+        />
+      </div>
+
+      <!-- cards  man-->
+      <div class="trend">
+        <div class="head">
+          <h1>Trends<span> Men's Wear</span></h1>
+        </div>
+
+        <div class="card">
+          <div class="crd">
+            <img src="./images/men-2.jpg" alt="img-2" />
+            <div class="crdtext">
+              <h2>Cutton Trending Shir't</h2>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star-half-stroke"></i><br />
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="crd">
+            <img src="./images/men-4.jpg" alt="img-2" />
+            <div class="crdtext">
+              <h2>Cutton Trending Shir't</h2>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star-half-stroke"></i><br />
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="crd">
+            <img src="./images/men-3.jpg" alt="img-3" />
+            <div class="crdtext">
+              <h2>Cutton Trending Shir't</h2>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star-half-stroke"></i><br />
+              <button>Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- cards  women-->
+      <div class="trend" id="trendSecond">
+        <div class="head">
+          <h1>Trends<span> Women's Wear</span></h1>
+        </div>
+
+        <div class="card">
+          <div class="crd">
+            <img src="./images/girls-1.webp" alt="img-2" />
+            <div class="crdtext">
+              <h2>Trending Girls Tops</h2>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star-half-stroke"></i><br />
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="crd">
+            <img src="./images/header.jpg" alt="img-2" />
+            <div class="crdtext">
+              <h2>Trending Girls Tops</h2>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star-half-stroke"></i><br />
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="crd">
+            <img
+              src="./images/ionela-mat-ATP9SFwKG9w-unsplash.jpg"
+              alt="img-2"
+            />
+            <div class="crdtext">
+              <h2>Trending Girls Tops</h2>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star-half-stroke"></i><br />
+              <button>Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- blogs  -->
+      <div class="trands">
+        <div class="head">
+          <h1>Trends <span>Men's Wear</span></h1>
+        </div>
+        <div class="card">
+          <div class="blog">
+            <img src="./images/blogs img.jpg" alt="img-5" />
+            <div class="blogtext">
+              <h2>Trending Girls Cloths</h2>
+              <br />
+              <p>
+                learn for past plane for future but leave in present. past plane
+                for future but leave
+              </p>
+              <a href="https://www.hopscotch.in/girls">Read More</a>
+            </div>
+          </div>
+
+          <div class="blog">
+            <img src="./images/blogs img-1.jpg" alt="img-4" />
+            <div class="blogtext">
+              <h2>Trending Boys Cloths</h2>
+              <br />
+              <p>
+                learn for past plane for future but leave in present. past plane
+                for future but leave
+              </p>
+              <a href="https://www.shoppersstop.com/men/c-A10">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- letter  -->
+      <div class="letter">
+        <div class="letter-text">
+          <h1>Sign Up for NewsLetter</h1>
+          <p>learn for past plane for future but leave in present.</p>
+        </div>
+
+        <div class="inp">
+          <input type="text" placeholder="Enter your email" />
+          <button>Sign Up</button>
+        </div>
+      </div>
+
+      <!-- footer  -->
+
+      <div class="footer">
+        <div class="footer-text">
+          <h2>Trends</h2>
+          <p>Service</p>
+          <p>Customer</p>
+          <p>Satisfation</p>
+        </div>
+
+        <div class="footer-text">
+          <h2>About Us</h2>
+          <p>
+            Address :-Vaishnavi Summit, Ground Floor, Koramangala Industrial
+            Layout, Bangalore KA 560034 IN.
+          </p>
+          <p>Customer</p>
+          <p>Service</p>
+          <p>Satisfation</p>
+        </div>
+
+        <div class="footer-text">
+          <h2>Contect</h2>
+          <p>9898769223</p>
+          <p>Customer</p>
+          <p>Comming up...</p>
+          <p>New Arrival</p>
+        </div>
+
+        <div class="footer-text">
+          <h2>Trending</h2>
+          <p>Service</p>
+          <p>Customer</p>
+          <p>Shops</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./Ecommarce.js"></script>
+  </body>
+</html>
