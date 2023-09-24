@@ -6,6 +6,14 @@
 body {
   background-color: #eeee;
 }
+
+#home.active,
+#shop.active,
+#blog.active,
+#about.active,
+#contact.active {
+  color: rgb(11, 163, 163);
+}
 /* nav star ----------- */
 nav {
   display: flex;
@@ -36,9 +44,7 @@ ul li a {
 nav ul li i {
   font-size: 22px;
 }
-ul li #home {
-  color: rgb(88, 218, 245);
-}
+
 ul li a:hover {
   border-bottom: 2px solid rgba(10, 11, 11, 0.951);
   cursor: pointer;
@@ -107,11 +113,11 @@ ul li i:hover {
   border-radius: 51px;
 }
 
-.card img:hover {
+/* .card img:hover {
   transition: 0.6s ease;
   width: 90%;
-  /* height: 320px; */
-}
+
+} */
 .card .crd {
   width: 300px;
   height: 550px;
@@ -135,7 +141,129 @@ ul li i:hover {
   font-size: large;
   margin-top: 10px;
 }
+/* about us  */
+.about {
+  display: none;
+}
+.aboutUs {
+  background-color: rgb(8, 8, 79);
+  color: white;
+  padding: 56px;
+  font-size: 22px;
+}
+.me {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  background-color: white;
+  padding: 33px;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+.me img {
+  width: 44%;
+  margin-left: 10px;
+}
+.aboutText p {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: larger;
+}
+.aboutText h1 {
+  margin-left: 20px;
+}
 
+/* contact  */
+.contect {
+  display: none;
+}
+.contacttUs {
+  background-color: rgb(8, 8, 79);
+  color: white;
+  padding: 56px;
+  font-size: 22px;
+}
+.ContactText p {
+  padding: 5px;
+}
+.hide {
+  display: none !important;
+}
+.Contactme {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  background-color: white;
+  padding: 33px;
+  margin-left: 25%;
+  margin-top: 5%;
+}
+.Contactme img {
+  width: 54%;
+}
+.ContactText {
+  margin-left: 10px;
+}
+
+.form {
+  text-align: center;
+  margin-top: 5%;
+}
+.form input {
+  width: 300px;
+  height: 27px;
+  padding: 5px;
+  margin-top: 11px;
+}
+
+.form button {
+  margin-top: 15px;
+  background-color: rgb(6, 91, 91);
+  color: white;
+  padding: 10px 30px;
+  font-size: large;
+  border: none;
+}
+
+/* add to cart  */
+.cart {
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+.cardText {
+  margin-top: 22px;
+  padding: 22px;
+}
+.cardText h1 {
+  margin-top: 12px;
+}
+.cardText h2 {
+  margin-top: 12px;
+}
+.cardText p {
+  margin-top: 15px;
+}
+.btn button {
+  margin-top: 15px;
+  background-color: rgb(230, 105, 38);
+  color: rgb(6, 0, 0);
+  padding: 10px 30px;
+  font-size: large;
+  border: none;
+}
+.cardText .back {
+  margin-top: 15px;
+  background-color: rgb(4, 78, 87);
+  color: rgb(248, 241, 241);
+  padding: 10px 45px;
+  font-size: large;
+  border: none;
+}
+.cart img {
+  height: 380px;
+  margin-top: 50px;
+}
 /* blog  -----------------*/
 
 .blog {
@@ -147,14 +275,18 @@ ul li i:hover {
   margin-inline: 22px;
   border-radius: 10px;
 }
-.blog:hover {
+/* .blog:hover {
   transition: 0.6s ease;
-  width: 620px;
+  width: 300px;
   height: 320px;
+} */
+.blogimg {
+  width: 200px !important;
+  transition: 1s;
 }
-.blog img {
-  width: 40%;
-  border-radius: 5px;
+.blogimg:hover {
+  transform: scale(1.2);
+  /* z-index: 2; */
 }
 .blogtext {
   padding: 20px;

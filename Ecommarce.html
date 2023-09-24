@@ -12,6 +12,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
   </head>
+
   <body>
     <div class="containe">
       <nav>
@@ -21,7 +22,7 @@
 
         <ul>
           <li>
-            <a href="#" id="home" onclick="homes()">Home</a>
+            <a id="home" class="active" onclick="homes()">Home</a>
             <a id="shop" onclick="shop()">Shops</a>
             <a id="blog" onclick="blog()">Blog</a>
             <a id="about" onclick="about()">About</a>
@@ -57,7 +58,7 @@
 
         <div class="card">
           <div class="crd">
-            <img src="./images/men-2.jpg" alt="img-2" />
+            <img src="./images/men-2.jpg" alt="" onclick="show(this)" />
             <div class="crdtext">
               <h2>Cutton Trending Shir't</h2>
               <i class="fa-solid fa-star"></i>
@@ -70,7 +71,7 @@
           </div>
 
           <div class="crd">
-            <img src="./images/men-4.jpg" alt="img-2" />
+            <img src="./images/men-4.jpg" alt="" onclick="show(this)" />
             <div class="crdtext">
               <h2>Cutton Trending Shir't</h2>
               <i class="fa-solid fa-star"></i>
@@ -83,7 +84,7 @@
           </div>
 
           <div class="crd">
-            <img src="./images/men-3.jpg" alt="img-3" />
+            <img src="./images/men-3.jpg" alt="" onclick="show(this)" />
             <div class="crdtext">
               <h2>Cutton Trending Shir't</h2>
               <i class="fa-solid fa-star"></i>
@@ -105,7 +106,7 @@
 
         <div class="card">
           <div class="crd">
-            <img src="./images/girls-1.webp" alt="img-2" />
+            <img src="./images/girls-1.webp" alt="" onclick="show(this)" />
             <div class="crdtext">
               <h2>Trending Girls Tops</h2>
               <i class="fa-solid fa-star"></i>
@@ -118,7 +119,7 @@
           </div>
 
           <div class="crd">
-            <img src="./images/header.jpg" alt="img-2" />
+            <img src="./images/header.jpg" alt="" onclick="show(this)" />
             <div class="crdtext">
               <h2>Trending Girls Tops</h2>
               <i class="fa-solid fa-star"></i>
@@ -133,7 +134,8 @@
           <div class="crd">
             <img
               src="./images/ionela-mat-ATP9SFwKG9w-unsplash.jpg"
-              alt="img-2"
+              alt=""
+              onclick="show(this)"
             />
             <div class="crdtext">
               <h2>Trending Girls Tops</h2>
@@ -147,6 +149,79 @@
           </div>
         </div>
       </div>
+      <!-- about us  -->
+
+      <div class="about" id="abouts">
+        <div class="aboutUs">
+          <h1>#KnowUs</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="me">
+          <img
+            src="./images/undraw_social_distancing_2g0u.svg"
+            alt="about-img"
+          />
+          <div class="aboutText">
+            <h1>Who Are You ?</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+              consectetur voluptatum! Non magnam in necessitatibus maxime
+              dolorum voluptate? Ipsum corporis facilis omnis ipsam, ad
+              dignissimos beatae adipisci veritatis quae tempore.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- contect  -->
+
+      <div class="contect" id="con">
+        <div class="contacttUs">
+          <h1>#Lets Contact</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="Contactme">
+          <div class="ContactText">
+            <h1>Visit Our Office OR Contact Us Today</h1>
+            <p>Address · With Google Search, select Edit profile.</p>
+            <p>Contact :-altaratrs@gmail.com</p>
+            <p>Numbar :- 41254878444</p>
+          </div>
+          <img src="./images/map images.jpg" alt="about-img" />
+        </div>
+
+        <div class="form">
+          <h1>Contact Whith Us. Fill Form</h1>
+          <input type="text" placeholder="Enter email" /><br />
+          <input type="text" placeholder="Enter password" /><br />
+          <input type="text" placeholder="Enter numbar" /><br />
+          <input type="text" placeholder="Enter gender" /><br />
+          <input type="text" placeholder="Enter text" /><br />
+
+          <button>Submit</button>
+        </div>
+      </div>
+
+      <!--add to cart  -->
+
+      <div class="cart">
+        <img src="./images/11-12-years-girls.webp" id="newImg" alt="cart-img" />
+        <div class="cardText">
+          <h1>Trends Offer :Trending Shop now</h1>
+          <h2>Special Price</h2>
+          <h2>$ 11</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>itaque voluptatem aliquam ducimus, labore pariatur fugit rerum</p>
+          <p>consequatur quibusdam, nesciunt facere mollitia laborum cumque.</p>
+          <div class="btn">
+            <button>Buy Now</button>
+            <button onclick="addCart()">Add To Cart</button><br />
+          </div>
+          <button class="back">Back</button>
+        </div>
+      </div>
 
       <!-- blogs  -->
       <div class="trands">
@@ -155,7 +230,7 @@
         </div>
         <div class="card">
           <div class="blog">
-            <img src="./images/blogs img.jpg" alt="img-5" />
+            <img src="./images/blogs img.jpg" alt="img-5" class="blogimg" />
             <div class="blogtext">
               <h2>Trending Girls Cloths</h2>
               <br />
@@ -168,7 +243,7 @@
           </div>
 
           <div class="blog">
-            <img src="./images/blogs img-1.jpg" alt="img-4" />
+            <img src="./images/blogs img-1.jpg" alt="img-4" class="blogimg" />
             <div class="blogtext">
               <h2>Trending Boys Cloths</h2>
               <br />
